@@ -13,6 +13,7 @@
 		B0BD71B41BC9CAE700698307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BD71B31BC9CAE700698307 /* Assets.xcassets */; };
 		B0BD71B71BC9CAE700698307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BD71B51BC9CAE700698307 /* LaunchScreen.storyboard */; };
 		B0BD71C21BC9CAE800698307 /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD71C11BC9CAE800698307 /* CurrencyConverterTests.swift */; };
+		B0BD71CC1BC9D3C000698307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BD71B01BC9CAE700698307 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BD71CC1BC9D3C000698307 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
