@@ -9,6 +9,12 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var entryField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var currencyContainer: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

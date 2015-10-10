@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -15,12 +16,123 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Dqr-PZ-5O1">
+                                <rect key="frame" x="205" y="60" width="191" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="Tzl-Uq-dJE"/>
+                                    <constraint firstAttribute="height" constant="20" id="iam-SX-Uof"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaV-1G-gRz">
+                                <rect key="frame" x="20" y="130" width="560" height="70"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="AoT-Kc-HOE">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$test field" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQd-0E-gZw">
+                                <rect key="frame" x="20" y="199" width="560" height="65"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="vXQ-vH-9o9"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFq-ni-TeK" userLabel="Dotted view">
+                                <rect key="frame" x="20" y="260" width="560" height="5"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="UrQ-MG-6i0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwH-Ow-omf" userLabel="Currency Container">
+                                <rect key="frame" x="0.0" y="314" width="600" height="100"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ch5-cr-Jfg">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="IAj-tp-w4y"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.78823529411764703" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ch5-cr-Jfg" secondAttribute="bottom" id="Hk0-Gj-8ct"/>
+                                    <constraint firstItem="ch5-cr-Jfg" firstAttribute="top" secondItem="cwH-Ow-omf" secondAttribute="top" id="Hmm-Ry-FVk"/>
+                                    <constraint firstItem="ch5-cr-Jfg" firstAttribute="centerX" secondItem="cwH-Ow-omf" secondAttribute="centerX" id="Ymh-IB-qsB"/>
+                                    <constraint firstAttribute="height" constant="100" id="b6O-vp-hWD">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="90"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lO-oH-Sp7" userLabel="Result label">
+                                <rect key="frame" x="20" y="442" width="560" height="70"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="cvt-Pw-clq"/>
+                                    <constraint firstAttribute="height" constant="70" id="waA-d3-3Kh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.84705882352941175" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aFq-ni-TeK" firstAttribute="top" secondItem="RQd-0E-gZw" secondAttribute="bottom" constant="-4" id="1tA-fV-SiB"/>
+                            <constraint firstItem="OaV-1G-gRz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Sd-R7-Dsv"/>
+                            <constraint firstItem="aFq-ni-TeK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="C5z-a3-Pfo"/>
+                            <constraint firstItem="aFq-ni-TeK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HNy-1P-FnN"/>
+                            <constraint firstItem="5lO-oH-Sp7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IOj-eT-XHX"/>
+                            <constraint firstItem="OaV-1G-gRz" firstAttribute="top" secondItem="Dqr-PZ-5O1" secondAttribute="bottom" constant="50" id="Jjc-ss-jss">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="5lO-oH-Sp7" firstAttribute="top" secondItem="cwH-Ow-omf" secondAttribute="bottom" constant="28" id="KIv-5r-NUg">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="RQd-0E-gZw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VKW-P4-nUz"/>
+                            <constraint firstItem="Dqr-PZ-5O1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VoO-Zj-4yB"/>
+                            <constraint firstItem="cwH-Ow-omf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dW3-ok-IyA"/>
+                            <constraint firstItem="Dqr-PZ-5O1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="gtt-9C-Wv0">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="cwH-Ow-omf" firstAttribute="top" secondItem="aFq-ni-TeK" secondAttribute="bottom" constant="49" id="k9d-B1-AYg">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="5lO-oH-Sp7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nfY-HO-a4f"/>
+                            <constraint firstItem="RQd-0E-gZw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ref-Fb-gVq"/>
+                            <constraint firstAttribute="trailing" secondItem="cwH-Ow-omf" secondAttribute="trailing" id="tS5-hK-3bL"/>
+                            <constraint firstItem="RQd-0E-gZw" firstAttribute="top" secondItem="OaV-1G-gRz" secondAttribute="bottom" constant="-1" id="xuU-WA-GjR"/>
+                            <constraint firstItem="OaV-1G-gRz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yB8-gM-2h3"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="currencyContainer" destination="cwH-Ow-omf" id="cDF-gh-mhJ"/>
+                        <outlet property="entryField" destination="RQd-0E-gZw" id="Ttc-Hy-urA"/>
+                        <outlet property="resultLabel" destination="5lO-oH-Sp7" id="Yye-L7-689"/>
+                        <outlet property="scrollView" destination="ch5-cr-Jfg" id="VBF-dW-waC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="353"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="191" height="20"/>
+    </resources>
 </document>
