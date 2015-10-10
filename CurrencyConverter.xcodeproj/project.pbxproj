@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B0BD71AD1BC9CAE700698307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD71AC1BC9CAE700698307 /* AppDelegate.swift */; };
-		B0BD71AF1BC9CAE700698307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD71AE1BC9CAE700698307 /* ViewController.swift */; };
+		B0BD71AF1BC9CAE700698307 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD71AE1BC9CAE700698307 /* HomeViewController.swift */; };
 		B0BD71B21BC9CAE700698307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BD71B01BC9CAE700698307 /* Main.storyboard */; };
 		B0BD71B41BC9CAE700698307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BD71B31BC9CAE700698307 /* Assets.xcassets */; };
 		B0BD71B71BC9CAE700698307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BD71B51BC9CAE700698307 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		B0BD71A91BC9CAE700698307 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BD71AC1BC9CAE700698307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0BD71AE1BC9CAE700698307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0BD71AE1BC9CAE700698307 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0BD71B11BC9CAE700698307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0BD71B31BC9CAE700698307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0BD71B61BC9CAE700698307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BD71AC1BC9CAE700698307 /* AppDelegate.swift */,
-				B0BD71AE1BC9CAE700698307 /* ViewController.swift */,
+				B0BD71AE1BC9CAE700698307 /* HomeViewController.swift */,
 				B0BD71B01BC9CAE700698307 /* Main.storyboard */,
 				B0BD71B31BC9CAE700698307 /* Assets.xcassets */,
 				B0BD71B51BC9CAE700698307 /* LaunchScreen.storyboard */,
@@ -145,6 +145,7 @@
 				TargetAttributes = {
 					B0BD71A81BC9CAE700698307 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 53HQQ44J5Q;
 					};
 					B0BD71BC1BC9CAE800698307 = {
 						CreatedOnToolsVersion = 7.0;
@@ -196,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0BD71AF1BC9CAE700698307 /* ViewController.swift in Sources */,
+				B0BD71AF1BC9CAE700698307 /* HomeViewController.swift in Sources */,
 				B0BD71AD1BC9CAE700698307 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriscillaBevis.CurrencyConverter;
@@ -337,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriscillaBevis.CurrencyConverter;
