@@ -46,9 +46,10 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="56"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                 <connections>
                                     <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1Ep-1d-Rc9"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pO4-ry-Apz"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFq-ni-TeK" userLabel="Dotted view" customClass="DottedView" customModule="CurrencyConverter" customModuleProvider="target">

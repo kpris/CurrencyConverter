@@ -35,6 +35,17 @@ class HomeViewController: UIViewController {
         
         //pull out the scrollview's gesture recognizer and pop it onto the container instead so that you can scroll outside the bounds of the scrollview itself.
         currencyContainer.addGestureRecognizer(scrollView.panGestureRecognizer)
+        
+        //And a gesture recognizer so that you can tap the background to dismiss the keyboard
+        let tap = UITapGestureRecognizer(target: self, action: "tappedBackground:")
+        self.view.addGestureRecognizer(tap)
+        
+    }
+    
+    //MARK: IBActions
+    
+    @IBAction func tappedBackground(tap: UITapGestureRecognizer) {
+        entryField.resignFirstResponder()
     }
     
     //MARK: Currency Selection
@@ -61,9 +72,7 @@ class HomeViewController: UIViewController {
     
     //MARK: TextField Management
     
-    @IBAction func textFieldDidChange(textField: UITextField) {
-        updateResult()
-    }
+    
     
     func updateResult() {
         if let text = entryField.text {
@@ -93,6 +102,18 @@ class HomeViewController: UIViewController {
         }
 
         return nil
+    }
+}
+
+extension HomeViewController: UITextFieldDelegate {
+    
+    @IBAction func textFieldDidChange(textField: UITextField) {
+        updateResult()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        entryField.resignFirstResponder()
+        return false
     }
 }
 
