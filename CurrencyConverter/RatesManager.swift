@@ -10,6 +10,15 @@ import Foundation
 
 enum Currency: String {
     case CAD, EUR, GBP, JPY, USD
+    
+    func symbol() -> String {
+        switch self {
+        case .EUR: return "€"
+        case .GBP: return "£"
+        case .JPY: return "¥"
+        default: return "$"
+        }
+    }
 }
 
 class RatesManager {
@@ -29,7 +38,7 @@ class RatesManager {
     }
     
     func rateForCurrency(currency: Currency) -> Double {
-        
-        return 0.0
+        //Because we're assuming fixer is perfect, we shouldn't ever be missing a rate. However as the compiler doesn't know that we still need to cater for the scneario that the key is missing. In this case we just return 0.
+        return rates[currency.rawValue] ?? 0
     }
 }

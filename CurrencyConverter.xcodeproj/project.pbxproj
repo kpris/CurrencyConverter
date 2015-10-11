@@ -84,8 +84,7 @@
 			children = (
 				B0BD71AC1BC9CAE700698307 /* AppDelegate.swift */,
 				B0BD71AE1BC9CAE700698307 /* HomeViewController.swift */,
-				B0BD71CD1BC9D5C300698307 /* RatesManager.swift */,
-				B0BD71CF1BC9D79900698307 /* FixerService.swift */,
+				B0BD71D11BC9E02400698307 /* Model */,
 				B0BD71B01BC9CAE700698307 /* Main.storyboard */,
 				B0BD71B31BC9CAE700698307 /* Assets.xcassets */,
 				B0BD71B51BC9CAE700698307 /* LaunchScreen.storyboard */,
@@ -101,6 +100,15 @@
 				B0BD71C31BC9CAE800698307 /* Info.plist */,
 			);
 			path = CurrencyConverterTests;
+			sourceTree = "<group>";
+		};
+		B0BD71D11BC9E02400698307 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0BD71CD1BC9D5C300698307 /* RatesManager.swift */,
+				B0BD71CF1BC9D79900698307 /* FixerService.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -16,6 +16,7 @@ class CurrencyConverterTests: XCTestCase {
         homeVC.loadView()
         
         homeVC.entryField.text = "100"
+        homeVC.textFieldDidChange(homeVC.entryField)
         XCTAssertTrue(homeVC.resultLabel.text?.characters.count > 0)
     }
     
@@ -24,6 +25,7 @@ class CurrencyConverterTests: XCTestCase {
         homeVC.loadView()
         
         homeVC.entryField.text = ""
+        homeVC.textFieldDidChange(homeVC.entryField)
         XCTAssertTrue(homeVC.resultLabel.text?.characters.count == 0)
     }
 
