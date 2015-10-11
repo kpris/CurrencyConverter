@@ -19,6 +19,14 @@ enum Currency: String {
         default: return "$"
         }
     }
+    
+    static var currencyList: [String] {
+        return [Currency.CAD.rawValue, Currency.EUR.rawValue, Currency.GBP.rawValue, Currency.JPY.rawValue, Currency.USD.rawValue]
+    }
+    
+    static func currencyForIndex(index: Int) -> Currency? {
+        return Currency(rawValue: currencyList[index])
+    }
 }
 
 class RatesManager {
