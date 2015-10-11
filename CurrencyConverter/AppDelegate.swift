@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
         //kickstart the rates api so that it has the best chance of retrieving rates before the user tries to interact with the UI.
         RatesManager.sharedManager
         

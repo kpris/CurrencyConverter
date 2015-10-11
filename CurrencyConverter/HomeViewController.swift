@@ -21,6 +21,11 @@ class HomeViewController: UIViewController {
             updateResult()
         }
     }
+    
+    private struct Constants {
+        static let selectedLabelColor = UIColor.whiteColor()
+        static let unselectedLabelColor = UIColor(red: 0, green: 230.0/255.0, blue: 140.0/255.0, alpha: 1)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +41,15 @@ class HomeViewController: UIViewController {
     
     private func populateCurrencyScroller() {
         
-        scrollView.backgroundColor = UIColor.purpleColor()
-        scrollView.alpha = 0.8
         let size = scrollView.frame.size
         var currX: CGFloat = 0
         
         for currency in Currency.currencyList {
             let label = UILabel(frame: CGRectMake(currX, 0, size.width, size.height))
-            label.backgroundColor = UIColor.blueColor()
+            label.backgroundColor = UIColor.clearColor()
             label.textAlignment = NSTextAlignment.Center
-            label.alpha = 0.5
-            label.font = UIFont.systemFontOfSize(56)
-            label.textColor = UIColor.whiteColor()
+            label.font = UIFont(name: "Helvetica", size: 56)
+            label.textColor = Constants.unselectedLabelColor
             label.text = currency
             scrollView.addSubview(label)
             currX += size.width
