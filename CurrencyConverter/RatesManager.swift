@@ -30,8 +30,8 @@ enum Currency: String {
 }
 
 class RatesManager {
-    static let sharedManager = RatesManager()
     
+    static let sharedManager = RatesManager()
     private var rates: [String: Double]
     
     private init() {

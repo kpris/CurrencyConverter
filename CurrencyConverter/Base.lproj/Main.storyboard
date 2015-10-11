@@ -85,10 +85,10 @@
                                         </constraints>
                                     </view>
                                     <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch5-cr-Jfg">
-                                        <rect key="frame" x="200" y="0.0" width="200" height="90"/>
+                                        <rect key="frame" x="230" y="0.0" width="140" height="90"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="IAj-tp-w4y"/>
+                                            <constraint firstAttribute="width" constant="140" id="IAj-tp-w4y"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="gnX-iL-bgp"/>

@@ -86,9 +86,9 @@
 			children = (
 				B0BD71AC1BC9CAE700698307 /* AppDelegate.swift */,
 				B0BD71AE1BC9CAE700698307 /* HomeViewController.swift */,
+				B0BD71B01BC9CAE700698307 /* Main.storyboard */,
 				B0E782A41BCA044400F85A1F /* Views */,
 				B0BD71D11BC9E02400698307 /* Model */,
-				B0BD71B01BC9CAE700698307 /* Main.storyboard */,
 				B0BD71B31BC9CAE700698307 /* Assets.xcassets */,
 				B0BD71B51BC9CAE700698307 /* LaunchScreen.storyboard */,
 				B0BD71B81BC9CAE700698307 /* Info.plist */,

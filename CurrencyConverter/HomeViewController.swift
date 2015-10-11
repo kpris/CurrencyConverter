@@ -48,7 +48,7 @@ class HomeViewController: UIViewController {
         entryField.resignFirstResponder()
     }
     
-    //MARK: Currency Selection
+    //MARK: Refresh
     
     private func populateCurrencyScroller() {
         
@@ -69,12 +69,7 @@ class HomeViewController: UIViewController {
         scrollView.contentSize = CGSizeMake(currX, size.height)
     }
     
-    
-    //MARK: TextField Management
-    
-    
-    
-    func updateResult() {
+    private func updateResult() {
         if let text = entryField.text {
             
             //the number formatter framework doesn't work if there isn't a dollar symbol in front.
@@ -87,8 +82,8 @@ class HomeViewController: UIViewController {
         }
     }
     
-    
     //MARK: Helpers
+    
     private func formattedValue(value: String, currency: Currency) -> String? {
         
         let formatter = NSNumberFormatter()
@@ -105,6 +100,7 @@ class HomeViewController: UIViewController {
     }
 }
 
+//MARK: TextField Management
 extension HomeViewController: UITextFieldDelegate {
     
     @IBAction func textFieldDidChange(textField: UITextField) {
@@ -117,6 +113,7 @@ extension HomeViewController: UITextFieldDelegate {
     }
 }
 
+//MARK: ScrollView Management
 extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let currPage = currentPage()

@@ -44,7 +44,6 @@ class FixerService {
     
     private static func parseRatesFromJson(json: NSDictionary) -> [String: Double] {
         if let rates = json["rates"] as? [String: AnyObject] {
-            
             /*
             Because the JSON serialization is all in Objective-C land, we lose the value type information and need to convert it to the final type that we want, which in this case is a Double.
             */
