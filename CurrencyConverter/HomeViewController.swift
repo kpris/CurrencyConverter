@@ -49,7 +49,7 @@ class HomeViewController: UIViewController {
             label.backgroundColor = UIColor.clearColor()
             label.textAlignment = NSTextAlignment.Center
             label.font = UIFont(name: "Helvetica", size: 56)
-            label.textColor = Constants.unselectedLabelColor
+            label.textColor = currX == 0 ? Constants.selectedLabelColor : Constants.unselectedLabelColor
             label.text = currency
             scrollView.addSubview(label)
             currX += size.width
@@ -98,8 +98,18 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        if let currency = Currency.currencyForIndex(currentPage()) {
+        let currPage = currentPage()
+        if let currency = Currency.currencyForIndex(currPage) {
             currentCurrency = currency
+        }
+        
+        //want to make the currently selected label white
+        var i = 0
+        for view in scrollView.subviews {
+            if let label = view as? UILabel {
+                label.textColor = i == currPage ? Constants.selectedLabelColor : Constants.unselectedLabelColor
+                i++
+            }
         }
     }
     
