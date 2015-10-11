@@ -63,7 +63,7 @@ class HomeViewController: UIViewController {
         updateResult()
     }
     
-    private func updateResult() {
+    func updateResult() {
         if let text = entryField.text {
             
             //the number formatter framework doesn't work if there isn't a dollar symbol in front.
