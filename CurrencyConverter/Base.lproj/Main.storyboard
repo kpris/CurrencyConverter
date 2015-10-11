@@ -46,7 +46,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="56"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go"/>
                                 <connections>
                                     <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1Ep-1d-Rc9"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="pO4-ry-Apz"/>
@@ -237,8 +237,8 @@
                             <mask key="constraints">
                                 <exclude reference="Jjc-ss-jss"/>
                                 <exclude reference="k9d-B1-AYg"/>
-                                <exclude reference="VcX-nP-I6N"/>
                                 <exclude reference="KIv-5r-NUg"/>
+                                <exclude reference="VcX-nP-I6N"/>
                             </mask>
                         </variation>
                     </view>
